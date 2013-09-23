@@ -1,0 +1,34 @@
+{
+  "name": "initd-forever",
+  "preferGlobal": true,
+  "version": "0.1.0",
+  "author": "Yassine AZZOUT <92bondstreet@gmail.com>",
+  "homepage": "https://github.com/92bondstreet/initd-forever",
+  "description": "Create a daemon of a nodejs application",
+  "main": "lib/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/92bondstreet/initd-forever.git"
+  },
+  "keywords": [
+    "forever",
+    "initd",
+    "daemon",
+    "start",
+    "sysvinit",
+    "monitor"
+  ],
+  "analyze": false,
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "license": "MIT",
+  "readmeFilename": "readme.md",  
+  "bugs": {
+    "url": "https://github.com/92bondstreet/initd-forever/issues"
+  }
+}
