@@ -35,8 +35,7 @@ To generate daemon and monit files from the command line, use following options:
 			-l, --logfile		LOGFILE     Logs the daemon output to LOGFILE
 			-n, --name			NAME		Application name
 			-p, --pidfile		PIDFILE		The pid file
-			-m, --monit						Generate the monit script file
-
+			-m, --monit			MONITPORT	Generate the monit script file with the port number MONITPORT where your application runs
 		Error:
 		Cannot generate daemon file: no options defined and package.json is not found.
 
@@ -68,7 +67,7 @@ Default is based on **name** value: **/var/run/name.pid**
 
 ### monit
 
-Default generates the script file.
+Default doesn't generate the monit script file.
 
 Running tests
 -------------
