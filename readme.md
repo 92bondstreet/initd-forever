@@ -16,12 +16,59 @@ Installation
 
 You can install `initd-forever` and its dependencies with npm: 
 
-`npm install initd-forever`.
+`npm install initd-forever -g` for a global installation (for example)
 
 
 Usage
 -----
+
+To generate daemon and monit files from the command line, use following options:
+
+		$ initd-forever --help
+		usage: initd-forever [options]
 	
+		Generate the script file as a daemon and the monit script file.
+
+		options:
+			-a, --app			APP			Path to node.js main js file
+			-e, --env			ENV			Export NODE_ENV with ENV value
+			-l, --logfile		LOGFILE     Logs the daemon output to LOGFILE
+			-n, --name			NAME		Application name
+			-p, --pidfile		PIDFILE		The pid file
+			-m, --monit						Generate the monit script file
+
+		Error:
+		Cannot generate daemon file: no options defined and package.json is not found.
+
+For missing options, initd-forever will use values saved in the package.json.
+
+
+Options
+-------
+
+### app
+
+Default is the **main** defined in package.json
+
+### env
+
+Default is **production**
+
+### name
+
+Default is the **name** defined in package.json
+
+### logfile
+
+Default is based on **name** value: **/var/run/name.log**
+
+### pidfile
+
+Default is based on **name** value: **/var/run/name.pid**
+
+### monit
+
+Default generates the script file.
 
 Running tests
 -------------
@@ -41,7 +88,7 @@ Authors and contributors
 ### Current
 * [Yassine Azzout][] (Creator, Coder, Keeper)
 
-[Yassine Azzout]: http://www.92bondstreet.com
+[Yassine Azzout]: http://yass.io
 
 
 License
