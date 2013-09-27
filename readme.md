@@ -1,4 +1,4 @@
-INITD-FOREVER
+INITD-FOREVER [![Build Status](https://travis-ci.org/92bondstreet/initd-forever.png)](https://travis-ci.org/92bondstreet/initd-forever)
 =========
 
 initd-forever is a node.js module to create a daemon for your nodejs application.
