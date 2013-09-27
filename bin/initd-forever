@@ -10,4 +10,4 @@ var traceError = function (error, retval) {
 		  console.log(retval);
 		}
 
-daemon.script(process.arg,traceError);
+daemon.script(process.argv,traceError);
