@@ -10,6 +10,9 @@
     "type": "git",
     "url": "https://github.com/92bondstreet/initd-forever.git"
   },
+  "dependencies":{
+    "commander":"*"
+  },
   "keywords": [
     "forever",
     "initd",
