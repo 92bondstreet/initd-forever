@@ -11,7 +11,8 @@
     "url": "https://github.com/92bondstreet/initd-forever.git"
   },
   "dependencies":{
-    "commander":"*"
+    "commander":"*",
+    "swig":"*"
   },
   "keywords": [
     "forever",
