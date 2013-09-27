@@ -5,7 +5,9 @@
   "author": "Yassine AZZOUT <92bondstreet@gmail.com>",
   "homepage": "https://github.com/92bondstreet/initd-forever",
   "description": "Create a daemon of a nodejs application",
-  "main": "lib/main.js",
+  "bin": { 
+    "initd-forever": "./bin/initd-forever" 
+  },  
   "repository": {
     "type": "git",
     "url": "https://github.com/92bondstreet/initd-forever.git"
