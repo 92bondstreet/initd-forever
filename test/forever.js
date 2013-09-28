@@ -116,7 +116,7 @@
 	          			});
 		    		});
 
-		    		it('generate monit script file with arguments', function(done) {
+		    		/*it('generate monit script file with arguments', function(done) {
 		    			             						         	
 			        	daemon.script(['npm', 'test', '-a', '/var/www/nodeapp/app.js', '-e', 'production', '-n', 'nodeapp', '-m', '3010'],function(err,response){
 	             			if (err) 
@@ -125,7 +125,7 @@
 	             				console.log(response);	            		
 	            			done();
 	          			});
-		    		});
+		    		});*/
 		    	});
 		    });
 
