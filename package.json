@@ -1,12 +1,12 @@
 {
   "name": "initd-forever",
   "preferGlobal": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Yassine AZZOUT <92bondstreet@gmail.com>",
   "homepage": "https://github.com/92bondstreet/initd-forever",
   "description": "Create a daemon of a nodejs application",
   "bin": { 
-    "initd-forever": "./bin/initd-forever" 
+    "initd-forever": "./bin/initd-forever.js" 
   }, 
   "main": "lib/main.js",
   "repository": {
