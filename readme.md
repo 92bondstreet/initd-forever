@@ -14,7 +14,7 @@ Keynote
 Installation
 ------------
 
-You can install `initd-forever` and its dependencies with npm: 
+You can install `initd-forever` and its dependencies with npm:
 
 `npm install initd-forever -g` for a global installation (for example)
 
@@ -26,7 +26,7 @@ To generate daemon and monit files from the command line, use following options:
 
 		$ initd-forever --help
 		usage: initd-forever [options]
-	
+
 		Generate the script file as a daemon and the monit script file.
 
 		options:
@@ -36,6 +36,7 @@ To generate daemon and monit files from the command line, use following options:
 			-n, --name			NAME		Application name
 			-p, --pidfile		PIDFILE		The pid file
 			-m, --monit			MONITPORT	Generate the monit script file with the port number MONITPORT where your application runs
+			-f, --forever   FOREVER	Path to forever script
 		Error:
 		Cannot generate daemon file: no options defined and package.json is not found.
 
@@ -68,6 +69,10 @@ Default is based on **name** value: **/var/run/name.pid**
 ### monit
 
 Default doesn't generate the monit script file.
+
+### forever
+
+Default uses whatever script the enviroment variable points to
 
 Running tests
 -------------
