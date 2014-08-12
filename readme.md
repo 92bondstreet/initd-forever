@@ -77,7 +77,7 @@ Default uses whatever script the enviroment variable points to
 
 ### command
 
-Default doesn't pass any commands to nodejs script
+Default passes the nodejs executable '/usr/bin/env node'
 
 Running tests
 -------------
