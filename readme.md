@@ -31,6 +31,7 @@ To generate daemon and monit files from the command line, use following options:
 
 		options:
 			-a, --app			APP			Path to node.js main js file
+			-c, --command	COMMAND	Command to execute on the nodejs file used for custom command line options
 			-e, --env			ENV			Export NODE_ENV with ENV value
 			-l, --logfile		LOGFILE     Logs the daemon output to LOGFILE
 			-n, --name			NAME		Application name
@@ -73,6 +74,10 @@ Default doesn't generate the monit script file.
 ### forever
 
 Default uses whatever script the enviroment variable points to
+
+### command
+
+Default doesn't pass any commands to nodejs script
 
 Running tests
 -------------
