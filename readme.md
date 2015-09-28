@@ -61,7 +61,7 @@ Default is the **name** defined in package.json
 
 ### logfile
 
-Default is based on **name** value: **/var/run/name.log**
+Default is based on **name** value: **/var/log/name.log**
 
 ### pidfile
 
@@ -73,7 +73,7 @@ Default doesn't generate the monit script file.
 
 ### forever
 
-Default uses whatever script the enviroment variable points to
+Default uses whatever script the environment variable points to
 
 ### command
 
