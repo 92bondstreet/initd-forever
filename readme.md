@@ -61,7 +61,7 @@ Default is the **name** defined in package.json
 
 ### logfile
 
-Default is based on **name** value: **/var/run/name.log**
+Default is based on **name** value: **/var/log/name.log**
 
 ### pidfile
 
